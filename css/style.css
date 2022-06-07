@@ -8,6 +8,7 @@
     font-family: 'Paytone One', sans-serif;
     list-style-type: none;
     box-sizing: border-box;
+
 }
 
 /* SubMenu *********************************************************************************************************************************************/
@@ -19,6 +20,7 @@
     background-size: cover;
     background-position: center;
     flex-wrap: wrap;
+
 }
 
 
@@ -27,6 +29,7 @@
 .navLink{
     display: flex;
     justify-content: center;
+
 }
 
 .logoImg {
@@ -44,13 +47,15 @@
     background-color: #ace2fe;
     margin: auto;
     height: 70px;
-    justify-content:center; 
+    justify-content:center;
+    overflow: hidden;
 }
 
 
 .menu li{
     display: block;
     text-align: center;
+
 }
 
 .menu li a{
@@ -63,7 +68,7 @@
     margin: 5px;
     font-size: 12px;
     position: relative;
-    top: 10px;
+    top: 15px;
 }
 
 .menu > li{
@@ -92,6 +97,8 @@
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
+
+
 }
 
 .titulo{
@@ -104,10 +111,11 @@
 
 .box{
     display: flex;
-    overflow: hidden;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .box img:hover{
@@ -118,7 +126,7 @@
     transition: all 1.3s;
 }
 
-.section img{
+.section1 img{
     height: 650px;
     width: auto;
     border-radius: 30px;
@@ -231,6 +239,7 @@
     height: 80vh;
     background-image: url(./fondo.jpg);
     background-attachment: fixed;
+
 }
 
 .seccionAcerca{
@@ -242,7 +251,6 @@
     background-color: white;
     padding:0 40px 0 40px;
     border-radius: 10px;
-
 }
 
 .seccionAcerca h1 {
@@ -251,10 +259,11 @@
     font-size: 50px;
     position: relative;
     color: #6a6a6a;
+
 }
 
 .seccionAcerca h3{
-    
+
     font-family: "Dancing Script";
     position: relative;
     top: 30px;
@@ -263,12 +272,14 @@
     position: relative;
     color: #ace2fe;
 
+
 }
 
 .acerca{
     position: relative;
     top: 45px;
     display: flex;
+
 }
 
 .acerca p{
@@ -283,6 +294,10 @@
 /* main Como Comprar *********************************************************************************************************************************************/
 .mainCompra{
     height: 115vh;
+    background-image: url(./fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -354,7 +369,7 @@
 }
 
 .row i{
-    width: 10px; 
+    width: 10px;
     height: 10px;
 }
 
@@ -380,51 +395,7 @@
     transform: scale(1.5);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ContainerGrid ************************************************************************************************************************************************/
+/* ContainerGrid/Contacto ************************************************************************************************************************************************/
 
 .containerBody {  display: grid;
     grid-template-columns: 1.5fr 0.5fr 1fr;
@@ -437,13 +408,16 @@
     "aside section section "
     "footer footer footer";
     background-image: url(..//Fotos/fondo.jpg);
+    flex-wrap: wrap;
 }
+
 
 /* Header */
 
-.header { 
-    grid-area: header; 
+.header {
+    grid-area: header;
     background-image: url(./fondo.jpg);
+
 }
 
 .containerSubmenuG{
@@ -451,6 +425,7 @@
     justify-content: center;
     background-size: cover;
     background-position: center;
+
 }
 
 .navLinkG img{
@@ -463,7 +438,7 @@
     background-color: #ace2fe;
     margin: auto;
     height: 70px;
-    justify-content:center; 
+    justify-content:center;
 }
 
 .menuG li{
@@ -494,26 +469,26 @@
     position: absolute;
     min-width: 100px;
     z-index: 1;
-
 }
 
 .menuG li:hover >ul {
     display:block;
-
-
 }
 
 /* Contacto**********************************************************/
 
-.section { 
-    grid-area: section; 
+
+.section {
+    grid-area: section;
+    background-image: url(./fondo.jpg);
+    background-position: center;
 
 }
 
 
 .formContact{
     background-color: white;
-    width: 600px;
+    width: 70%;
     margin:20px 0 20px 100px;
     padding: 10px 20px;
     border-radius: 10px;
@@ -559,16 +534,22 @@ textarea{
     color: white;
 }
 
-.aside{
+.inicioContactoContainer{
     display: grid;
     background-color: #ffffff;
     height: 475px;
-    width: 600px;
+    width: 70%;
     padding: 20px 40px 0 40px;
     border-radius: 10px;
     margin: 20px 0 0 100px;
     font-family: 'Roboto', sans-serif;
-    
+
+}
+
+aside{
+    grid-area: aside;
+    background-position: center;
+    background-image: url(./fondo.jpg);
 }
 
 .linea{
@@ -598,8 +579,8 @@ textarea{
 
 .emailContacto {
     padding-top:20px;
-    
-    
+
+
 }
 
 .redes a{
@@ -618,11 +599,9 @@ textarea{
 /* Footer **********************************************************************************************************************************************************************************************/
 
 .footer {
-    grid-area: footer; 
+    grid-area: footer;
     background-color: #ace2fe;
     color: white;
-
-    
 }
 
 
@@ -656,7 +635,7 @@ textarea{
 }
 
 .rowG i{
-    width: 10px; 
+    width: 10px;
     height: 10px;
 }
 
@@ -683,25 +662,332 @@ textarea{
 }
 
 
-@media screen and (max-width: 800px){
 
 
 
-    .mainCompra{
-    height: 193vh;
+
+
+
+
+
+
+
+/* Media/Tablets */
+@media (max-width: 768px) {
+
+/* index */
+.box{
+    margin-top: 70px;
+}
+
+.main{
+    height: 320vh;
 }
 
 
+    /* productos */
+
+
+.mainProductos{
+        height: 300vh;
+    }
+
+/* Contacto */
+    
+.containerBody {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat( 4, auto);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header "
+    "aside "
+    "section "
+    "footer ";
+    background-image: url(..//Fotos/fondo.jpg);
+}
+
+.formContact{
+    width: 75%;
+}
+
+textarea{
+    max-width: 350px;
+    min-width: 350px;
+}
+
+
+.inicioContactoContainer{
+    width: 75%;
+}
+
+
+/* quienes somos *************************************/
+.mainQuieneSomos {
+    height:100vh;
+    
+
+}
+
+.seccionAcerca{
+    width:90%;
+    height: 550px;
+}
+
+.acerca{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.p2{
+    padding:10px 0 0 0;
+    
+}
+
+/* maincomprar ****************************************************/
+
+.mainCompra{
+    height: 160vh;
+}
+
 .containerCompra{
-    width:600px;
-    height: auto;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.89);
-    padding:0 40px 0 40px;
-    border-radius: 10px;
-    position: relative;
-    top: 45px;
+    width:90%;
     flex-wrap: wrap;
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media/Celular ****************************************************/
+@media screen and (max-width: 375px){
+
+/* submenu******************************************************************* */
+
+.containerSubmenu{
+    height:200px;
+    flex-wrap: wrap;
+}
+
+.logoImg {
+    height: 170px;
+
+}
+
+/* menucelular ****************************************************/
+
+.menu{
+    height: 70px;
+    justify-content:center; 
+    overflow: hidden;
+}
+
+.menu li a{
+    width: 65px;
+    padding: 10px;
+    margin-left:2px;
+    height:30px;
+    font-size:7px;
+    left: 2px;
+}
+
+
+
+/* mainIndex ****************************************************/
+
+.main{
+    height: 200vh;
+}
+
+.titulo{
+    top: 5px;
+}
+
+.box{
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.section1 img{
+    height: 400px;
+
+}
+
+.section2 img{
+    height: 400px;
+}
+
+.section3 img{
+    height: 400px;
+}
+
+
+
+/* productos ***************************************************/
+
+
+.mainProductos{
+    height: 550vh;
+}
+
+.title{
+    font-size: 30px;
+}
+
+
+/* Contacto ***************************************************/
+
+.containerBody {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat( 4, auto);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header"
+    "aside"
+    "section"
+    "footer";
+    background-image: url(..//Fotos/fondo.jpg);
+    flex-wrap: wrap;
+}
+
+textarea{
+    max-width: 350px;
+    min-width: 350px;
+}
+
+
+.inicioContactoContainer{
+    background-color: #ffffff;
+    height: 475px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0 20px 25px;
+}
+
+.formContact{
+    background-color: white;
+    width: 90%;
+    margin:20px 0 20px 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 120px rgba(255, 255, 255, 0);
+    justify-content: center;
+}
+
+
+.section{
+    background-image: url(./fondo.jpg);
+    height: 100%;
+    
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #ace2fe;
+    color: white;
+    display: flex;
+}
+
+/* quienes somos *************************************/
+.mainQuieneSomos {
+    height:180vh;
+
+}
+
+.seccionAcerca{
+    width:90%;
+    height: 1110px;
+
+}
+
+.acerca{
+    flex-direction: column;
+}
+
+.p2{
+    padding:10px 0 0 0;
+}
+
+/* maincomprar ****************************************************/
+
+.mainCompra{
+    height: 155vh;
+}
+
+.containerCompra{
+    width:90%;
+    flex-wrap: wrap;
+}
+
+.containerCompra h1{
+    font-size: 35px;
+}
+
+.containerCompra h3{
+    font-size: 15px;
+}
+
+.compra p{
+    padding: 10px 0 10px 10px;
+    font-size: 10px;
+}
+
+
+/* footer celular ****************************************************/
+
+.containerFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerFooterG{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10px 10px;
+}
+
+
+.column1{
+    margin: 20px 0 0 10px;
+    font-size: 13px;
+
+}
+
+.column2{
+    margin: 25px 0 0 10px;
+    font-size: 13px;
+}
+
+.column3{
+    margin: 25px 0 32px 10px;
+    font-size: 13px;
+}
+
+.containerLink{
+    padding-top:5px;
+}
+
+
+}
+
