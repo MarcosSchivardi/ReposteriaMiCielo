@@ -210,6 +210,9 @@
     margin: auto;
     position: relative;
     top: 20px;
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+
 }
 
 .container .card{
@@ -280,6 +283,8 @@
     border-radius: 10px;
     overflow: hidden;
     overflow: auto;
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
 }
 
 .seccionAcerca h1 {
@@ -326,6 +331,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 
@@ -339,6 +345,9 @@
     position: relative;
     top: 45px;
     border:solid 3px #d0d7d8af;
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+    
 }
 
 .tituloCompra{
@@ -455,6 +464,7 @@
     "footer footer footer";
     background-image: url(..//Fotos/fondo.jpg);
     flex-wrap: wrap;
+
 }
 
 
@@ -462,8 +472,6 @@
 
 .header {
     grid-area: header;
-    background-image: url(./fondo.jpg);
-
 }
 
 .containerSubmenuG{
@@ -484,7 +492,9 @@
     background-color: #ace2fe;
     margin: auto;
     height: 70px;
+    width: 100%;
     justify-content:center;
+
 }
 
 .menuG li{
@@ -497,9 +507,9 @@
     background-color:#ffffff ;
     border-radius: 10px;
     color: #62cbff;
-    padding: 15px 15px;
+    padding: 15px 20px;
     display: block;
-    margin: 5px;
+    margin:12px 0 10px 10px;
     font-size: 12px;
 }
 
@@ -526,11 +536,26 @@
 
 .section {
     grid-area: section;
-    background-image: url(./fondo.jpg);
-    background-position: center;
-
 }
 
+.tel label {
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-left: 5px;
+}
+
+.redes i{
+    font-size: 20px;
+    transition: all;
+    margin-left: 15px;
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.redes i:hover{
+    transform: scale(1.5);
+
+}
 
 .formContact{
     background-color: white;
@@ -539,6 +564,9 @@
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 0px 10px 120px rgb(255, 255, 255);
+    animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+    
 
 }
 
@@ -589,13 +617,13 @@ textarea{
     border-radius: 10px;
     margin: 20px 0 0 100px;
     font-family: 'Roboto', sans-serif;
+    animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
 
 }
 
 aside{
     grid-area: aside;
-    background-position: center;
-    background-image: url(./fondo.jpg);
 }
 
 .linea{
@@ -614,6 +642,7 @@ aside{
 
     font-size: 50px;
 }
+
 .inicioContacto p{
     color: #ace2fe;
 }
@@ -844,6 +873,17 @@ textarea{
     }
 }
 
+@media (max-width: 632px){
+
+    .menuG li a{
+        width: 80px;
+        padding: 10px 10px 10px 7px;
+        margin-left:10px;
+        height:38px;
+        font-size:10px;
+        left: 2px;
+    }
+}
 
 
 @media (max-width: 538px){
@@ -895,7 +935,6 @@ textarea{
 /* menucelular ****************************************************/
 
 .menu{
-    height: 70px;
     justify-content:center; 
     overflow: hidden;
 }
@@ -968,6 +1007,15 @@ textarea{
     "footer";
     background-image: url(..//Fotos/fondo.jpg);
     flex-wrap: wrap;
+}
+
+.menuG li a{
+    width: 65px;
+    padding: 10px;
+    margin-left:2px;
+    height:30px;
+    font-size:7px;
+    left: 2px;
 }
 
 textarea{
